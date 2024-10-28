@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+         <img src="buk-logo.png" alt="" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="form.html">Feedback</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form>
+        <h2>Applicaton Form</h2>
+
+        <p id="ptag">
+            Using a form for university applications ensures standardization, as it allows all applicants to present their information in a consistent manner.
+            This uniformity helps admissions staff review applications more easily and systematically. Additionally, forms enhance efficiency by streamlining the application process,
+            leading to quicker processing and decision-making.</p> <p id="ptag">They also ensure that applicants provide all necessary information required for evaluation, such as academic history and personal statements.
+            Finally, forms create a documented record of each application, which is important for both the university and the applicant for future reference.
+        </p>
+
+        <fieldset>
+            <p>
+                <label for=" first name">First Name:</label><br />
+                <input type=" text" id="first name" required />
+            </p>
+
+            <p>
+                <label for=" last name">Last Name:</label><br />
+                <input type=" text" id="last name" required />
+            </p>
+
+            <label for=" date of birth">Date of birth</label><br />
+            <input type="date" id="date of birth" required />
+
+            <p>
+                <label for=" gender">Gender:</label><br />
+                <input type="radio" name=" gender" value=" male" required /> Male
+                <input type="radio" name=" gender" value=" female" /> Female <br />
+            </p>
+
+            <p>
+                <label for="password">Password:</label><br/>
+                <input type="password" required placeholder="Enter your password" />
+            </p>
+
+            <label for="decade">Favorite decade: <br /> (If an individuals favorite films, pop culture, historical events etc are of a particular decade, it can provide insight into their tastes and influences that shape their identity. We like to know our students on a personal level to help make their experiences one of a kind!)</label><br />
+            <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="2010" required />
+
+            <p>
+                <label for=" phone">Phone:</label><br />
+                <input type=" tel" required placeholder="+234-+213-+20-+218-+244..." pattern="+[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend> Favorite Pet: (also a personality test)</legend>
+
+            <p>
+                <input type="radio" name="animal" id="canine" />
+                <label for=" pet"> Dog  <br />(you are loyal and playful)</label>
+            </p>
+
+            <p>
+                <input type="radio" name=" animal" id="feline" />
+                <label for="cat">Cat  <br />(you are independent and affectionate)</label>
+            </p>
+
+            <p>
+                <input type="radio" name=" animal" id=" aves" />
+                <label for=" bird">Bird <br /> (you are talkative and bright)</label>
+            </p>
+
+            <p>
+                <input type="radio" name="animal" id="pisces" />
+                <label for="fish">Fish <br /> (you like color and are calm)</label>
+            </p>
+
+            <p>
+                <input type="radio" name="animal" id="bunny" />
+                <label for="rabbit">Rabbit <br /> (you are gentle and social)</label>
+            </p>
+
+            <p>
+                <input type="radio" name="animal" id="small-pigs" />
+                <label for="guinea-pig">Guinea pig <br /> (you are friendly and vocal)</label>
+            </p>
+
+            <p>
+                <input type="radio" name="animal" id="reptile" />
+                <label for="snake">Snake <br /> (you are graceful and mysterious)</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <ul>
+                    <li>  <label for="courses">Select your course</label> </li>
+                </ul>
+                <select name="course" id="course">
+                    <optgroup label="Computing">
+                        <option value="SWE">Software engineering</option>
+                        <option value="IT">Information technology</option>
+                        <option value="CS">Computer science</option>
+                        <option value="CBS">Cyber security</option>
+                    </optgroup>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend> Message </legend>
+            <label for="message">Leave us a message with your feedback! </label><br />
+            <textarea typeof="message" id="message" cols="30" rows="10" placeholder="Write your message here"></textarea>
+        </fieldset>
+
+        <p>
+            <button id="submit">Submit</button>         <button id="reset">Reset</button>
+        </p>
+
+
+    </form>
+    <footer>
+        &copy;2024 Faculty of computing SKS
+    </footer>
+</body>
+</html>
